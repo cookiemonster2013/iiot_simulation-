@@ -1,0 +1,27 @@
+# Setup Instructions
+
+## Prerequisites
+- Python 3.8 or higher
+- MQTT broker (Mosquitto recommended)
+- Git
+
+## Installation
+1. Clone the repository:
+#git clone https://github.com/yourusername/iiot-simulation.git
+cd iiot-simulation#
+2. Create a virtual environment:
+#python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate#
+3. Install dependencies:
+#pip install -r requirements.txt#
+
+  ## Running the Simulation
+1. Start your MQTT broker (e.g., Mosquitto)
+2. Run the OPC UA to MQTT bridge:
+#python scripts/opcua_mqtt_bridge.py#
+
+3. In a separate terminal, run the visualization: #python scripts/data_visualization.py#
+
+  ## Configuration
+You can modify the simulation parameters in each script file or create a configuration file.
+  #
